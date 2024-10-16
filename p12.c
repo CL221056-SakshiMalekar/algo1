@@ -7,9 +7,8 @@ bool printDiamond(int rows) {
         return false;
     }
 
-    int n = rows / 2; // Half the number of rows (integer division)
-
-    // Upper part of the diamond
+    int n = rows / 2; 
+    
     for (int i = 0; i <= n; i++) {
         for (int j = 0; j < n - i; j++) {
             printf(" ");
@@ -20,7 +19,7 @@ bool printDiamond(int rows) {
         printf("\n");
     }
 
-    // Lower part of the diamond
+    
     for (int i = n - 1; i >= 0; i--) {
         for (int j = 0; j < n - i; j++) {
             printf(" ");
