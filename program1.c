@@ -9,8 +9,7 @@ int countPositiveNumbers(int* arr, int n)
  return pos_count; 
 } 
  
-// Function to find the count of 
-// negative integers in an array 
+
 int countNegativeNumbers(int* arr, int n) 
 { 
  int neg_count = 0; 
@@ -22,7 +21,7 @@ int countNegativeNumbers(int* arr, int n)
  return neg_count; 
 } 
  
-// Function to print the array 
+
 void printArray(int* arr, int n) 
 { 
  int i; 
@@ -34,7 +33,7 @@ void printArray(int* arr, int n)
  printf("\n"); 
 } 
  
-// Driver program 
+
 int main() 
 { 
  int arr[] = { 2, -1, 5, 6, 0, -3 }; 
