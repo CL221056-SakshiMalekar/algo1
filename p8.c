@@ -3,32 +3,32 @@
 int main() {
     int arr[100], n, freq[100], counted[100], countIndex = 0;
 
-    // Input number of elements
+    
     printf("Enter number of elements in the array: ");
     scanf("%d", &n);
 
-    // Input array elements
+   
     printf("Enter %d integers:\n", n);
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
-        freq[i] = -1; // Initialize frequency array
+        freq[i] = -1; 
     }
 
-    // Counting frequency
+    
     for (int i = 0; i < n; i++) {
         if (freq[i] == -1) {
             int count = 1;
             for (int j = i + 1; j < n; j++) {
                 if (arr[i] == arr[j]) {
                     count++;
-                    freq[j] = 0; // Mark as counted
+                    freq[j] = 0;
                 }
             }
-            freq[i] = count; // Store the frequency
+            freq[i] = count; 
         }
     }
 
-    // Printing frequency of each number
+    
     printf("Number - Frequency:\n");
     for (int i = 0; i < n; i++) {
         if (freq[i] != 0) {
